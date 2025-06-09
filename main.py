@@ -1,5 +1,5 @@
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from langchain_openai import ChatOpenAI
 chat_model = ChatOpenAI()
@@ -7,8 +7,7 @@ chat_model = ChatOpenAI()
 # subject = "AI"
 # result = chat_model.invoke(subject + "에 대한 시를 써줘.")
 # print(result.content)
-import os
-print(os.getenv("OPENAI_API_KEY"))
+
 import streamlit as st
 
 st.title("인공지능 시인")
